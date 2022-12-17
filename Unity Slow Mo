@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class TimeManager : MonoBehaviour
+{
+    [SerializeField] private float slowdownFactor = 0.05f;
+    [SerializeField] private float slowdownLength = 2f;
+
+    private void Update()
+    {
+        Time.timeScale += (1f / slowdownLength) * Time.deltaTime;
+    }
+
+    private void DoSlowMo()
+    {
+        Time.timeScale = slowdownFactor;
+        Time.fixedDeltaTime = Time.timeScale * 0.02f;
+    }
+}
+
