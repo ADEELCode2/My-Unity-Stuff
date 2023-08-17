@@ -1,6 +1,6 @@
 # FPSCounterController Documentation
 
-![FPSCounterController](images/fps.jpg)
+![FPSCounterController](fps.jpg)
 
 ## Overview
 
