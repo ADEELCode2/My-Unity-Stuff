@@ -50,4 +50,4 @@ The **FPSCounterController** script empowers you with precise control over the d
 
 ---
 
-*Celebrate each frame with the FPSCounterController!*
+*Celebrate each frame with the FPSCounterController!*-
