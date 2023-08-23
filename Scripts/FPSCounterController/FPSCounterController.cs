@@ -1,16 +1,22 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class FPSCounterController : MonoBehaviour
 {
     public bool showFPSCounter = true;
+    public bool setFrameRate = true;
     public Text fpsCounterText;
+
     private float deltaTime = 0.0f;
 
     private void Awake()
     {
         QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 60;
+
+        if (setFrameRate)
+        {
+            Application.targetFrameRate = 60;
+        }
     }
 
     private void Update()
